@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amber Smith | Beauty • Travel • Lifestyle</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f4f4f1;
+    color:#06a10e70;
+}
+
+h1,h2,h3{
+    font-family:'Playfair Display',serif;
+}
+
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:#fff;
+    padding:25px 0;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+.logo p{
+    font-size:12px;
+    letter-spacing:2px;
+    color:#8a8a8a;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:25px;
+    color:#555;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:url('"C:\Users\hp\Downloads\OIP (2).jpeg"') center/cover no-repeat;
+    height:550px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-box{
+    background:rgba(133, 127, 112, 0.95);
+    padding:50px;
+    max-width:600px;
+}
+
+.hero-box h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.hero-box p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 25px;
+    background:#94853c;
+    color:rgb(20, 18, 18);
+    text-decoration:none;
+    font-size:13px;
+    letter-spacing:1px;
+}
+
+/* ================= CATEGORIES ================= */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin:50px auto;
+}
+
+.category{
+    background:url('"C:\Users\hp\Downloads\OIP (2).jpeg"') center/cover;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:rgb(10, 9, 9);
+    font-size:20px;
+    font-family:'Playfair Display',serif;
+}
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter{
+    background:#d8b58d;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.newsletter h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.newsletter p{
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.form{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.form input{
+    padding:10px;
+    border:none;
+    width:220px;
+}
+
+.form button{
+    padding:10px 20px;
+    border:none;
+    background:#a6ad90;
+    color:rgb(19, 18, 18);
+    cursor:pointer;
+}
+
+/* ================= POSTS ================= */
+
+.posts{
+    margin:70px auto;
+}
+
+.post{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-bottom:60px;
+}
+
+.post img{
+    width:50%;
+}
+
+.post-content{
+    background:#ece9dd;
+    padding:40px;
+    width:50%;
+}
+
+.post-content h3{
+    margin-bottom:15px;
+}
+
+.post-content p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+/* ================= POPULAR ================= */
+
+.popular{
+    background:#8f9779;
+    padding:60px 0;
+    color:white;
+    text-align:center;
+}
+
+.popular h2{
+    margin-bottom:30px;
+}
+
+.popular-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.popular-card{
+    position:relative;
+}
+
+.popular-card img{
+    width:100%;
+}
+
+.popular-overlay{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(255,255,255,0.9);
+    padding:15px 30px;
+    color:#333;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#d8b58d;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social span{
+    margin:0 10px;
+    font-size:18px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .post{
+        flex-direction:column;
+    }
+
+    .post img,
+    .post-content{
+        width:100%;
+    }
+
+    .categories{
+        grid-template-columns:1fr;
+    }
+
+    .popular-grid{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        display:none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container nav">
+    <div class="logo">
+        <h1>Amber Smith</h1>
+        <p>BEAUTY • TRAVEL • LIFESTYLE</p>
+    </div>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT ME</a>
+        <a href="#">SHOP MY INSTA</a>
+        <a href="#">CONTACT</a>
+    </nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-box">
+        <h2>Introduction Goes Here</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <a href="#" class="btn">READ MORE</a>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="container categories">
+    <div class="category">Travel</div>
+    <div class="category">Lifestyle</div>
+    <div class="category">Home</div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+    <h3>Download My Monthly Planner</h3>
+    <p>Sign up to receive this printable for free</p>
+    <div class="form">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+        <button>Subscribe</button>
+    </div>
+</section>
+
+<!-- POSTS -->
+<section class="container posts">
+
+    <div class="post">
+        <img src="C:\Users\hp\Downloads\leaf.jpeg" alt="leaf.jpeg">
+        <div class="post-content">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+            <a href="#" class="btn">READ MORE</a>
+        </div>
+    </div>
+
+    <div class="post reverse">
+        <img src="C:\Users\hp\Downloads\download.jpeg" alt="download.jpeg">
+        <div class="post-content">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+            <a href="#" class="btn">READ MORE</a>
+        </div>
+    </div>
+
+    <div class="post">
+        <img src="file:///C:/Users/hp/Downloads/yoga.jpeg" alt="yoga.jpeg">
+        <div class="post-content">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+            <a href="#" class="btn">READ MORE</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- POPULAR -->
+<section class="popular">
+<div class="container">
+    <h2>Popular Posts</h2>
+    <div class="popular-grid">
+        <div class="popular-card">
+            <img src="C:\Users\hp\Downloads\OIP.jpeg" alt="OIP.jpeg">
+            <div class="popular-overlay">Read More</div>
+        </div>
+        <div class="popular-card">
+            <img src="C:\Users\hp\Downloads\OIP (1).jpeg" alt="OIP (1).jpeg">
+            <div class="popular-overlay">Read More</div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Get The Latest</h3>
+    <div class="form">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+        <button>Subscribe</button>
+    </div>
+
+    <div class="social">
+        <span>📷</span>
+        <span>▶</span>
+        <span>📌</span>
+        <span>🎵</span>
+        <span>👍</span>
+    </div>
+
+    <p style="margin-top:20px;">© 2026 Amber Smith</p>
+</footer>
+
+</body>
+</html>
